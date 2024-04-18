@@ -1,0 +1,14 @@
+instructions:
+- type: general
+  content: /
+    Below is a conversation between a personal shopping assistant and a user.
+
+models:
+- type: main
+  engine: amazon_bedrock
+  parameters:
+    model_id: "cohere.command-text-v14"
+    streaming: True
+    model_kwargs:
+      temperature: 0.5
+      max_tokens : 128

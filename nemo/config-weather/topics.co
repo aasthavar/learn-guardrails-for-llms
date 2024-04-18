@@ -1,0 +1,30 @@
+define flow greeting
+    user express greeting
+    bot express greeting
+    bot ask how are you
+
+define flow weather
+    user ask weather
+    $coords = execute location_api()
+    $weather = execute weather_api(coords=$coords)
+    bot answer weather
+
+define user express greeting
+    "Hello"
+    "Hi"
+    "What's up?"
+
+define bot express greeting
+    "Hey there!"
+
+define bot ask how are you
+    "How are you doing ?"
+    "How's it going ?"
+    "How are you feeling today ?"
+
+define user ask weather
+    "how is the weather today?"
+    "should I wear a coat?"
+
+define bot answer weather
+    bot report weather

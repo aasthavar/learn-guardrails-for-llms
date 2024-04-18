@@ -1,0 +1,6 @@
+List of stuff to do:
+1. fact_checking
+2. check_hallucination
+3. on_topic/off_topic
+4. jail_breaking
+5. content_moderation
